@@ -16,9 +16,9 @@ export function SiteFooter() {
         <div>
           <h3 className="mb-3 font-semibold text-white">Shop</h3>
           <div className="grid gap-2 text-sm text-liz-cream/75">
-            <Link href="/products">All products</Link>
-            <Link href="/products">New arrivals</Link>
-            <Link href="/products">Gift picks</Link>
+            <Link href="/products" prefetch={false}>All products</Link>
+            <Link href="/products?tag=new" prefetch={false}>New arrivals</Link>
+            <Link href="/products?tag=gift" prefetch={false}>Gift picks</Link>
           </div>
         </div>
         <div>

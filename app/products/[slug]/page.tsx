@@ -41,7 +41,7 @@ export default function ProductDetailPage({ params }: { params: { slug: string }
               <p className="text-3xl font-semibold text-liz-espresso">{formatCurrency(product.price)}</p>
             </div>
             <Button asChild>
-              <Link href="/cart">Add to Bag</Link>
+              <Link href={`/cart?item=${product.slug}`} prefetch={false}>Add to Bag</Link>
             </Button>
           </div>
 

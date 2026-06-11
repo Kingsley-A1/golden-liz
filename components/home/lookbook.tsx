@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export function Lookbook() {
@@ -11,7 +12,9 @@ export function Lookbook() {
           <p className="mt-5 max-w-lg leading-7 text-liz-cream/75">
             The website should not only list products. It should guide customers into complete looks: lip, skin, scent, necklace, earrings, and gift sets.
           </p>
-          <Button className="mt-7 bg-liz-gold text-white hover:bg-liz-goldDeep">Explore the edit</Button>
+          <Button asChild className="mt-7 bg-liz-gold text-white hover:bg-liz-goldDeep">
+            <Link href="/products?tag=gift" prefetch={false}>Explore the edit</Link>
+          </Button>
         </div>
         <div className="grid grid-cols-2 gap-4">
           <div className="relative aspect-[3/4] overflow-hidden rounded-[2rem]">

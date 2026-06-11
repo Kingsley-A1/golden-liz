@@ -25,8 +25,8 @@ Convince a boutique cosmetics and jewellery business owner that a professional w
 ## Quick start
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 Then open:

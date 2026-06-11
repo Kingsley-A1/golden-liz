@@ -7,7 +7,6 @@ import { ArrowRight, ShieldCheck, Sparkles, Truck } from "lucide-react";
 export function Hero() {
   return (
     <section className="gold-gradient relative overflow-hidden">
-      <div className="absolute left-1/2 top-8 h-80 w-80 -translate-x-1/2 rounded-full bg-liz-gold/20 blur-3xl" />
       <div className="container relative grid gap-10 py-8 md:grid-cols-[0.92fr_1.08fr] md:items-center md:py-16 lg:py-20">
         <div className="max-w-xl">
           <Badge variant="outline" className="mb-5">Boutique beauty • Jewellery • Gifts</Badge>
@@ -18,8 +17,8 @@ export function Hero() {
             Shop curated cosmetics, skincare, fragrance, and jewellery in a premium mobile-first boutique experience built to make buying effortless.
           </p>
           <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-            <Button asChild size="lg"><Link href="/products">Shop Collection <ArrowRight className="ml-2 h-4 w-4" /></Link></Button>
-            <Button asChild size="lg" variant="outline"><Link href="/#lookbook">View Lookbook</Link></Button>
+            <Button asChild size="lg"><Link href="/products" prefetch={false}>Shop Collection <ArrowRight className="ml-2 h-4 w-4" /></Link></Button>
+            <Button asChild size="lg" variant="outline"><Link href="/#lookbook" prefetch={false}>View Lookbook</Link></Button>
           </div>
           <div className="mt-8 grid gap-3 text-sm text-liz-charcoal sm:grid-cols-3">
             <TrustItem icon={<ShieldCheck className="h-4 w-4" />} label="Authentic picks" />

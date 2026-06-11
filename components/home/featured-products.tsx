@@ -12,7 +12,7 @@ export function FeaturedProducts() {
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-liz-goldDeep">Featured picks</p>
           <h2 className="mt-2 font-display text-3xl md:text-5xl">Best sellers for a polished week.</h2>
         </div>
-        <Button asChild variant="outline"><Link href="/products">Shop all products</Link></Button>
+        <Button asChild variant="outline"><Link href="/products" prefetch={false}>Shop all products</Link></Button>
       </div>
       <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {products.map((product) => <ProductCard key={product.id} product={product} />)}

@@ -11,11 +11,11 @@ export function CategoryRail() {
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-liz-goldDeep">Categories</p>
           <h2 className="mt-2 font-display text-3xl md:text-5xl">Shop by mood.</h2>
         </div>
-        <Link href="/products" className="hidden text-sm font-semibold text-liz-goldDeep md:block">View all</Link>
+        <Link href="/products" prefetch={false} className="hidden text-sm font-semibold text-liz-goldDeep md:block">View all</Link>
       </div>
       <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
         {categories.map((category) => (
-          <Link key={category.id} href="/products" className="group overflow-hidden rounded-[1.7rem] border bg-white shadow-soft">
+          <Link key={category.id} href={`/products?category=${category.id}`} prefetch={false} className="group overflow-hidden rounded-[1.7rem] border bg-white shadow-soft">
             <div className="relative aspect-[4/5]">
               <Image src={category.image} alt={category.name} fill className="object-cover transition duration-500 group-hover:scale-105" sizes="(min-width: 768px) 25vw, 50vw" />
             </div>

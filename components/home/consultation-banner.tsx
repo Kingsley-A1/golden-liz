@@ -11,7 +11,7 @@ export function ConsultationBanner() {
             <h2 className="mt-2 font-display text-3xl md:text-5xl">Let Golden Liz help customers choose the right shade, scent, or gift.</h2>
             <p className="mt-4 max-w-2xl text-white/75">This section can later connect to WhatsApp, AI product recommendation, or a simple consultation form.</p>
           </div>
-          <Button asChild className="bg-liz-gold text-white hover:bg-liz-goldDeep"><Link href="/products">Start shopping</Link></Button>
+          <Button asChild className="bg-liz-gold text-white hover:bg-liz-goldDeep"><Link href="/products" prefetch={false}>Start shopping</Link></Button>
         </div>
       </div>
     </section>

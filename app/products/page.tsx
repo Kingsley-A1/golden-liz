@@ -1,5 +1,5 @@
-import { ProductGrid } from "@/components/products/product-grid";
-import { ProductFilters } from "@/components/products/product-filters";
+import { Suspense } from "react";
+import { ProductDiscovery } from "@/components/products/product-discovery";
 import { getCategories, getProducts } from "@/lib/data";
 
 export default function ProductsPage() {
@@ -15,10 +15,9 @@ export default function ProductsPage() {
           Browse curated cosmetics, skincare, fragrance, and jewellery pieces selected to help every woman feel polished without stress.
         </p>
       </div>
-      <div className="grid gap-8 lg:grid-cols-[260px_1fr]">
-        <ProductFilters categories={categories} />
-        <ProductGrid products={products} />
-      </div>
+      <Suspense fallback={<div className="rounded-[1.5rem] border bg-white p-6 shadow-soft">Loading Golden Liz pieces...</div>}>
+        <ProductDiscovery products={products} categories={categories} />
+      </Suspense>
     </section>
   );
 }
