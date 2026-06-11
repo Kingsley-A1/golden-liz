@@ -1,0 +1,280 @@
+{
+  "brand": {
+    "name": "Golden Liz",
+    "tagline": "Soft luxury for beauty, jewellery, and everyday confidence.",
+    "whatsapp": "0800 000 0000",
+    "instagram": "@goldenliz_boutique",
+    "location": "Calabar, Nigeria"
+  },
+  "categories": [
+    {
+      "id": "cosmetics",
+      "name": "Cosmetics",
+      "description": "Lip, face, brow, and glow essentials for polished everyday beauty.",
+      "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=85"
+    },
+    {
+      "id": "skincare",
+      "name": "Skincare",
+      "description": "Soft skin prep, glow serums, moisturizers, and clean beauty rituals.",
+      "image": "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=85"
+    },
+    {
+      "id": "jewellery",
+      "name": "Jewellery",
+      "description": "Gold-tone earrings, necklaces, bracelets, and gift-friendly pieces.",
+      "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=85"
+    },
+    {
+      "id": "fragrance",
+      "name": "Fragrance",
+      "description": "Soft, feminine scents for daily wear, dates, work, and special evenings.",
+      "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=800&q=85"
+    }
+  ],
+  "products": [
+    {
+      "id": "glz-001",
+      "slug": "soft-glam-lip-kit",
+      "name": "Soft Glam Lip Kit",
+      "category": "Cosmetics",
+      "collection": "Soft Glam",
+      "price": 18500,
+      "compareAtPrice": 22000,
+      "stock": 12,
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=900&q=85",
+      "description": "A polished lip set for soft everyday glam, perfect for work, brunch, and evening looks.",
+      "highlights": [
+        "Smooth finish",
+        "Gift-friendly packaging",
+        "Pairs with neutral makeup looks"
+      ],
+      "tags": [
+        "lip",
+        "makeup",
+        "gift"
+      ],
+      "isBestSeller": true,
+      "isNew": false
+    },
+    {
+      "id": "glz-002",
+      "slug": "golden-hoop-earrings",
+      "name": "Golden Hoop Earrings",
+      "category": "Jewellery",
+      "collection": "Everyday Gold",
+      "price": 14500,
+      "stock": 5,
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=85",
+      "description": "Lightweight gold-tone hoops that elevate simple outfits without looking excessive.",
+      "highlights": [
+        "Lightweight feel",
+        "Polished gold tone",
+        "Ideal for everyday outfits"
+      ],
+      "tags": [
+        "earrings",
+        "gold",
+        "jewellery"
+      ],
+      "isBestSeller": true,
+      "isNew": true
+    },
+    {
+      "id": "glz-003",
+      "slug": "radiance-glow-serum",
+      "name": "Radiance Glow Serum",
+      "category": "Skincare",
+      "collection": "Glow Ritual",
+      "price": 27500,
+      "stock": 9,
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=900&q=85",
+      "description": "A skin-prep serum for a fresh, luminous base before makeup or no-makeup days.",
+      "highlights": [
+        "Glow-supporting formula",
+        "Works under makeup",
+        "Premium shelf appeal"
+      ],
+      "tags": [
+        "skincare",
+        "serum",
+        "glow"
+      ],
+      "isBestSeller": true,
+      "isNew": false
+    },
+    {
+      "id": "glz-004",
+      "slug": "pearl-drop-necklace",
+      "name": "Pearl Drop Necklace",
+      "category": "Jewellery",
+      "collection": "Evening Soft Luxury",
+      "price": 32000,
+      "stock": 4,
+      "rating": 4.7,
+      "image": "https://images.unsplash.com/photo-1611107683227-e9060eccd846?auto=format&fit=crop&w=900&q=85",
+      "description": "A delicate necklace for dresses, bridal moments, dinner looks, and refined gifting.",
+      "highlights": [
+        "Elegant pearl detail",
+        "Premium gift choice",
+        "Pairs with soft glam looks"
+      ],
+      "tags": [
+        "necklace",
+        "pearl",
+        "gift"
+      ],
+      "isBestSeller": false,
+      "isNew": true
+    },
+    {
+      "id": "glz-005",
+      "slug": "velvet-blush-compact",
+      "name": "Velvet Blush Compact",
+      "category": "Cosmetics",
+      "collection": "Soft Glam",
+      "price": 16500,
+      "stock": 15,
+      "rating": 4.6,
+      "image": "https://images.unsplash.com/photo-1526045478516-99145907023c?auto=format&fit=crop&w=900&q=85",
+      "description": "A soft blush compact for natural warmth and easy touch-ups during the day.",
+      "highlights": [
+        "Soft color payoff",
+        "Travel-friendly",
+        "Good for daily makeup"
+      ],
+      "tags": [
+        "blush",
+        "makeup",
+        "compact"
+      ],
+      "isBestSeller": false,
+      "isNew": true
+    },
+    {
+      "id": "glz-006",
+      "slug": "signature-gold-fragrance",
+      "name": "Signature Gold Fragrance",
+      "category": "Fragrance",
+      "collection": "Golden Scent",
+      "price": 38500,
+      "stock": 7,
+      "rating": 4.9,
+      "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=900&q=85",
+      "description": "A feminine scent profile for confident daily presence and memorable evenings.",
+      "highlights": [
+        "Elegant scent profile",
+        "Beautiful bottle design",
+        "Strong gift appeal"
+      ],
+      "tags": [
+        "fragrance",
+        "perfume",
+        "gift"
+      ],
+      "isBestSeller": true,
+      "isNew": true
+    },
+    {
+      "id": "glz-007",
+      "slug": "gold-stack-bracelet-set",
+      "name": "Gold Stack Bracelet Set",
+      "category": "Jewellery",
+      "collection": "Everyday Gold",
+      "price": 24500,
+      "stock": 6,
+      "rating": 4.8,
+      "image": "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=900&q=85",
+      "description": "A layered bracelet set that adds quiet sparkle to casual and dressy outfits.",
+      "highlights": [
+        "Layered styling",
+        "Gold-tone shine",
+        "Good for casual and dressy looks"
+      ],
+      "tags": [
+        "bracelet",
+        "gold",
+        "jewellery"
+      ],
+      "isBestSeller": false,
+      "isNew": false
+    },
+    {
+      "id": "glz-008",
+      "slug": "bridal-glow-gift-box",
+      "name": "Bridal Glow Gift Box",
+      "category": "Gift Sets",
+      "collection": "Golden Gifts",
+      "price": 58500,
+      "stock": 3,
+      "rating": 5.0,
+      "image": "https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=900&q=85",
+      "description": "A premium gift box combining skincare, beauty accents, and jewellery for special occasions.",
+      "highlights": [
+        "Premium gifting",
+        "Curated set",
+        "Occasion-ready packaging"
+      ],
+      "tags": [
+        "gift",
+        "bridal",
+        "bundle"
+      ],
+      "isBestSeller": true,
+      "isNew": true
+    }
+  ],
+  "orders": [
+    {
+      "id": "GLZ-2407",
+      "customer": "Ada E.",
+      "status": "confirmed",
+      "statusLabel": "Confirmed",
+      "total": 51500,
+      "items": [
+        "Soft Glam Lip Kit",
+        "Golden Hoop Earrings"
+      ]
+    },
+    {
+      "id": "GLZ-2408",
+      "customer": "Mimi U.",
+      "status": "packed",
+      "statusLabel": "Packed",
+      "total": 38500,
+      "items": [
+        "Signature Gold Fragrance"
+      ]
+    },
+    {
+      "id": "GLZ-2409",
+      "customer": "Blessing A.",
+      "status": "out_for_delivery",
+      "statusLabel": "Out for delivery",
+      "total": 58500,
+      "items": [
+        "Bridal Glow Gift Box"
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Ada E.",
+      "location": "Calabar",
+      "note": "The products looked exactly like the photos, and the packaging felt premium."
+    },
+    {
+      "name": "Mimi U.",
+      "location": "Uyo",
+      "note": "I loved that I could see options clearly before messaging. It made buying easier."
+    },
+    {
+      "name": "Blessing A.",
+      "location": "Lagos",
+      "note": "The gift set presentation was beautiful. I would definitely order again."
+    }
+  ]
+}
