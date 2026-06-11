@@ -14,7 +14,7 @@ export function ProductCard({ product }: { product: Product }) {
             src={product.image}
             alt={product.name}
             fill
-            className="object-cover transition duration-500 group-hover:scale-[1.04]"
+            className="object-cover"
             sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
           />
           {/* Soft depth overlay on hover */}
@@ -35,7 +35,7 @@ export function ProductCard({ product }: { product: Product }) {
           </div>
 
           {product.stock <= 6 ? (
-            <div className="absolute bottom-3 right-3 rounded-full bg-white/95 px-3 py-1 text-[10px] font-semibold text-liz-goldDeep shadow backdrop-blur-sm">
+            <div className="absolute bottom-3 right-3 rounded-full bg-white px-3 py-1 text-[10px] font-semibold text-liz-goldDeep shadow">
               Only {product.stock} left
             </div>
           ) : null}

@@ -36,7 +36,7 @@ export function MobileNav() {
         <Menu className="h-5 w-5" />
       </button>
 
-      {/* Backdrop — covers the half of the page not occupied by the drawer */}
+      {/* Backdrop */}
       <div
         aria-hidden="true"
         onClick={() => setOpen(false)}
@@ -45,19 +45,29 @@ export function MobileNav() {
         }`}
       />
 
-      {/* Sidebar drawer — 50 % viewport width, solid white background */}
+      {/*
+        Sidebar — the key pattern for scrollable content pinned inside a fixed panel:
+          aside   : flex flex-col overflow-hidden  (clips children, enables flex layout)
+          nav     : flex-1 min-h-0 overflow-y-auto  (min-h-0 lets flex-1 shrink below content height)
+        Without overflow-hidden on the parent and min-h-0 on the scrollable child,
+        the nav collapses to 0 height and the links disappear.
+      */}
       <aside
         aria-label="Navigation menu"
-        className={`fixed inset-y-0 left-0 z-50 flex w-1/2 min-w-[200px] max-w-[260px] flex-col bg-white transition-transform duration-300 ease-in-out ${
+        className={`fixed inset-y-0 left-0 z-50 flex h-full w-1/2 min-w-[200px] max-w-[260px] flex-col overflow-hidden bg-white transition-transform duration-300 ease-in-out ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
-        style={{ boxShadow: "6px 0 40px rgba(35,23,17,0.30)" }}
+        style={{ boxShadow: "6px 0 40px rgba(35,23,17,0.28)" }}
       >
         {/* Header */}
         <div className="flex shrink-0 items-center justify-between border-b border-liz-gold/15 bg-liz-champagne px-4 py-3.5">
           <Link href="/" onClick={() => setOpen(false)} className="flex items-center gap-2">
-            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-liz-espresso text-[11px] font-bold text-liz-gold">GL</span>
-            <span className="font-display text-base font-semibold tracking-tight text-liz-espresso">Golden Liz</span>
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-liz-espresso text-[11px] font-bold text-liz-gold">
+              GL
+            </span>
+            <span className="font-display text-base font-semibold tracking-tight text-liz-espresso">
+              Golden Liz
+            </span>
           </Link>
           <button
             onClick={() => setOpen(false)}
@@ -73,8 +83,8 @@ export function MobileNav() {
           Navigate
         </p>
 
-        {/* Nav links — solid white bg inherited from aside */}
-        <nav className="flex-1 overflow-y-auto bg-white px-2 pb-2">
+        {/* Nav links — min-h-0 is essential to allow flex-1 to shrink and overflow-y-auto to work */}
+        <nav className="min-h-0 flex-1 overflow-y-auto bg-white px-2 pb-2">
           <ul className="space-y-0.5">
             {nav.map(({ href, label, icon: Icon }) => (
               <li key={href}>
@@ -92,7 +102,7 @@ export function MobileNav() {
           </ul>
         </nav>
 
-        {/* Bottom CTAs — solid champagne strip */}
+        {/* Bottom CTAs */}
         <div className="shrink-0 space-y-2 border-t border-liz-gold/10 bg-liz-champagne px-4 pb-8 pt-4">
           <Link
             href="/#consultation"

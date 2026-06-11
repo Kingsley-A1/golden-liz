@@ -12,7 +12,7 @@ const nav = [
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-40 border-b border-liz-gold/12 bg-background/92 backdrop-blur-xl shadow-[0_1px_0_rgba(201,162,39,0.08)]">
+    <header className="sticky top-0 z-40 border-b border-liz-gold/15 bg-background shadow-[0_1px_0_rgba(201,162,39,0.10)]">
       <div className="container flex h-16 items-center justify-between gap-4">
         <div className="flex items-center gap-3">
           <MobileNav />
