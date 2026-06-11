@@ -48,15 +48,17 @@ const config: Config = {
         },
         liz: {
           gold: "#C9A227",
-          goldDeep: "#9F7412",
-          champagne: "#F8F1E3",
+          goldDeep: "#8C6510",
+          goldLight: "#E4C060",
+          champagne: "#F4EAD5",
           cream: "#FFF9F0",
-          blush: "#F7E7E3",
-          rose: "#D89BA7",
-          espresso: "#2A1B16",
-          plum: "#4A2638",
-          sage: "#71816D",
-          charcoal: "#1F1A17"
+          blush: "#F2DDD8",
+          rose: "#C8899A",
+          espresso: "#231711",
+          plum: "#3D1F30",
+          sage: "#627A5E",
+          charcoal: "#1A1612",
+          pearl: "#FDFAF5"
         }
       },
       borderRadius: {
@@ -65,8 +67,9 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)"
       },
       boxShadow: {
-        soft: "0 18px 60px rgba(42, 27, 22, 0.08)",
-        glow: "0 20px 80px rgba(201, 162, 39, 0.18)"
+        soft: "0 4px 24px rgba(35, 23, 17, 0.09), 0 1px 3px rgba(35, 23, 17, 0.06)",
+        glow: "0 8px 40px rgba(201, 162, 39, 0.22), 0 2px 8px rgba(35, 23, 17, 0.08)",
+        card: "0 2px 12px rgba(35, 23, 17, 0.07), 0 0 0 1px rgba(201, 162, 39, 0.08)"
       },
       fontFamily: {
         sans: ["var(--font-sans)", "Inter", "ui-sans-serif", "system-ui"],
