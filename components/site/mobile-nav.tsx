@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import {
   Menu, X, ShoppingBag, Sparkles,
-  Home, Package, Gem, ClipboardList, Droplets, Wind, ShoppingCart
+  Home, Package, Gem, ClipboardList, Droplets, Wind, ShoppingCart, LayoutDashboard
 } from "lucide-react";
 
 const nav = [
@@ -16,6 +16,10 @@ const nav = [
   { href: "/products?category=fragrance", label: "Fragrance", icon: Wind },
   { href: "/cart", label: "Cart", icon: ShoppingCart },
   { href: "/account", label: "My Orders", icon: ClipboardList },
+];
+
+const adminNav = [
+  { href: "/admin", label: "Admin Dashboard", icon: LayoutDashboard },
 ];
 
 export function MobileNav() {
@@ -54,7 +58,7 @@ export function MobileNav() {
       */}
       <aside
         aria-label="Navigation menu"
-        className={`fixed inset-y-0 left-0 z-50 flex h-full w-1/2 min-w-[200px] max-w-[260px] flex-col overflow-hidden bg-white transition-transform duration-300 ease-in-out ${
+        className={`fixed inset-y-0 left-0 z-50 flex h-full w-[78%] max-w-[300px] flex-col overflow-hidden bg-white transition-transform duration-300 ease-in-out ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}
         style={{ boxShadow: "6px 0 40px rgba(35,23,17,0.28)" }}
@@ -101,6 +105,25 @@ export function MobileNav() {
             ))}
           </ul>
         </nav>
+
+        {/* Admin section */}
+        <div className="shrink-0 border-t border-liz-gold/10 px-4 pb-2 pt-3">
+          <p className="mb-1 text-[10px] font-bold uppercase tracking-[0.22em] text-liz-goldDeep/45">
+            Prototype
+          </p>
+          {adminNav.map(({ href, label, icon: Icon }) => (
+            <Link
+              key={href}
+              href={href}
+              onClick={() => setOpen(false)}
+              prefetch={false}
+              className="flex items-center gap-3 rounded-lg px-3 py-2.5 text-[13px] font-medium text-foreground/70 transition hover:bg-liz-champagne hover:text-liz-goldDeep"
+            >
+              <Icon className="h-3.5 w-3.5 shrink-0 text-liz-goldDeep/45" />
+              {label}
+            </Link>
+          ))}
+        </div>
 
         {/* Bottom CTAs */}
         <div className="shrink-0 space-y-2 border-t border-liz-gold/10 bg-liz-champagne px-4 pb-8 pt-4">
