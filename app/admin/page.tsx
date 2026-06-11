@@ -24,7 +24,7 @@ export default function AdminPage() {
         </p>
       </div>
 
-      <div className="grid gap-5 md:grid-cols-4">
+      <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
         <Metric label="Reserved revenue" value={formatCurrency(reservedRevenue)} />
         <Metric label="Products" value={products.length.toString()} />
         <Metric label="Low stock" value={lowStock.length.toString()} />
@@ -102,10 +102,10 @@ export default function AdminPage() {
 
 function Metric({ label, value }: { label: string; value: string }) {
   return (
-    <Card>
-      <CardContent className="p-5">
-        <p className="text-sm text-muted-foreground">{label}</p>
-        <p className="mt-2 text-2xl font-semibold tracking-tight">{value}</p>
+    <Card className="rounded-xl border-liz-gold/15">
+      <CardContent className="p-4 md:p-5">
+        <p className="text-xs font-medium text-muted-foreground md:text-sm">{label}</p>
+        <p className="mt-1.5 text-xl font-bold tracking-tight md:mt-2 md:text-2xl">{value}</p>
       </CardContent>
     </Card>
   );
