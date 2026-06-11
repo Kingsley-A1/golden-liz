@@ -15,7 +15,7 @@ export function CategoryRail() {
       </div>
       <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
         {categories.map((category) => (
-          <Link key={category.id} href={`/products?category=${category.id}`} prefetch={false} className="group overflow-hidden rounded-[1.7rem] border bg-white shadow-soft">
+          <Link key={category.id} href={`/products?category=${category.id}`} prefetch={false} className="group overflow-hidden rounded-xl border bg-white shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-glow">
             <div className="relative aspect-[4/5]">
               <Image src={category.image} alt={category.name} fill className="object-cover transition duration-500 group-hover:scale-105" sizes="(min-width: 768px) 25vw, 50vw" />
             </div>
