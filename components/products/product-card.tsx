@@ -7,7 +7,7 @@ import { formatCurrency } from "@/lib/format";
 
 export function ProductCard({ product }: { product: Product }) {
   return (
-    <article className="group overflow-hidden rounded-xl border border-liz-gold/15 bg-white shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:border-liz-gold/35 hover:shadow-glow">
+    <article className="group overflow-hidden rounded-xl border border-liz-gold/15 bg-white shadow-soft transition-all duration-300 hover:border-liz-gold/40 hover:shadow-glow">
       <Link href={`/products/${product.slug}`} prefetch={false} className="block">
         <div className="relative aspect-[4/5] overflow-hidden bg-liz-champagne">
           <Image
